@@ -15,18 +15,18 @@ export default class AddSpeakersList extends Component {
   render() {
     return (
       <Content style={{padding: 10}}>
-          {
-            this.props.speakers.map((speaker, key) => {
-              return (
-                <SpeakerListEntry
-                  key={key}
-                  speaker={speaker}
-                  navigation={this.props.navigation}
-                  randomColor={this.randomColor}
-                  />
-              );
-            })
-          }
+        {
+          this.props.speakers.map((speaker, key) => {
+            return (
+              <SpeakerListEntry
+                key={key}
+                speaker={speaker}
+                navigation={this.props.navigation}
+                randomColor={this.randomColor}
+              />
+            );
+          })
+        }
       </Content>
     );
   }
